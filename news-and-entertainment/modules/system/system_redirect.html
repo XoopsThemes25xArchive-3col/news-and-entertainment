@@ -1,0 +1,122 @@
+<!DOCTYPE html PUBLIC '-//W3C//DTD XHTML 1.0 Transitional//EN' 'http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd'>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=<{$xoops_charset}>" />
+<meta http-equiv="Refresh" content="<{$time}>; url=<{$url}>" />
+<title><{$xoops_sitename}></title>
+<link rel="stylesheet" type="text/css" media="all" href="<{$xoops_themecss}>" />
+</head>
+<body>
+<table cellspacing="0" id="Main" align="center">
+    <tr>
+      <td height="153" >
+	  <table width="100%"  border="0" cellspacing="0" cellpadding="0" id="Header">
+        <tr>
+          <td class="Logo">
+          <table border="0" cellpadding="0" cellspacing="0" style="border-collapse: collapse" bordercolor="#111111" width="100%">
+            <tr>
+              <td width="50%" valign="top">
+              <img src="<{$xoops_imageurl}>images/logo.png" alt="" width="200" height="107" /></td>
+              <td width="50%" valign="top"><div align="center"><{$xoops_banner}></div></td>
+            </tr>
+          </table>
+          <table border="0" cellpadding="0" cellspacing="0" style="border-collapse: collapse" bordercolor="#111111" width="100%">
+            <tr>
+              <td width="33%" valign="top">
+              <table border="0" cellpadding="0" cellspacing="0" style="border-collapse: collapse" bordercolor="#111111" width="100%">
+                <tr>
+                  <td width="33%" valign="top" align="center">
+                  <img src="<{$xoops_imageurl}>images/home.png" alt="" width="44" height="50" /></td>
+                  <td width="33%" valign="top" align="center">
+                  <img src="<{$xoops_imageurl}>images/forum.png" alt="" width="44" height="50" /></td>
+                  <td width="34%" valign="top" align="center">
+                  <img src="<{$xoops_imageurl}>images/dir.png" alt="" width="44" height="50" /></td>
+                </tr>
+              </table>
+              </td>
+              <td width="33%" valign="top">
+              <span lang="en-us">
+              <form style="margin: 0px;" action="<{$xoops_url}>/search.php" method="get">
+  <p align="center">
+  <input type="text" name="query" size="38" />
+  <input type="hidden" name="action" value="results" />
+  <input type="submit" value="Search" style="font-size: 9px; color: #000000" /> </p>
+</form>
+</span></td>
+              <td width="34%" valign="top">
+              <table border="0" cellpadding="0" cellspacing="0" style="border-collapse: collapse" bordercolor="#111111" width="100%">
+                <tr>
+                  <td width="33%" valign="top">
+                  <p align="center">
+                  <img src="<{$xoops_imageurl}>images/upload.png" alt="" width="44" height="50" /></td>
+                  <td width="33%" valign="top">
+                  <p align="center">
+                  <img src="<{$xoops_imageurl}>images/games.png" alt="" width="44" height="50" /></td>
+                  <td width="34%" valign="top">
+                  <p align="center">
+                  <img src="<{$xoops_imageurl}>images/contact.png" alt="" width="44" height="50" /></td>
+                </tr>
+              </table>
+              </td>
+            </tr>
+          </table>
+          </td>
+        </tr>
+      </table>
+	  </td>
+    </tr>
+    <tr>
+      <td colspan="3" class="HeaderRed" height="60" >
+      <table border="0" cellpadding="0" cellspacing="0" style="border-collapse: collapse" bordercolor="#111111" width="101%">
+        <tr>
+          <td width="18%" valign="top">
+          <img src="<{$xoops_imageurl}>images/latestnews.png" width="99" height="59" align="left" /></td>
+          <td width="84%" valign="top">
+          </td>
+        </tr>
+      </table>
+      </td>
+    </tr>
+    <tr>
+      <td height="24">
+	  <table width="100%"  border="0" cellspacing="0" cellpadding="0" id="Menu" height="33">
+      <tr>
+        <td class="headmenu" height="19" align="center">
+        <a href="../../%3C{$xoops_url}%3E"><span lang="en-us">Home</span></a></td>
+        <td class="headmenu" height="19" align="center">
+        <span lang="ar-lb">
+        <a href="../../%3C{$xoops_url}%3E/modules/wfsection/">News</a></span> </td>
+        <td class="headmenu" height="19" align="center">
+        <span lang="ar-lb"><a href="../../%3C{$xoops_url}%3E/modules/news/">
+        Links</a></span></td>
+        <td class="headmenu" height="19" align="center">
+        <span lang="ar-lb"><a href="../../%3C{$xoops_url}%3E/modules/newbb/">
+        Forum</a></span></td>
+        <td class="headmenu" height="19" align="center">
+        <span lang="ar-lb"><a href="../../%3C{$xoops_url}%3E/modules/wffaq/">
+        F.A.Q.</a></span></td>
+        <td class="headmenu" height="19" align="center">
+        <span lang="ar-lb"><a href="../../%3C{$xoops_url}%3E/modules/liaise/">
+        Contact</a></span> </td>
+		</tr>
+      </table>
+	</td>
+    </tr>
+    <tr>
+      <td id="centercolumn"  style="padding-top:40px; padding-bottom:60px; ">
+        <!-- Display center blocks if any -->
+<div style="text-align:center; font-weight : bold;">
+  <h4><{$message}></h4>
+  <p><{$lang_ifnotreload}></p>
+</div>
+<{if $xoops_logdump != ''}><div><{$xoops_logdump}></div><{/if}>
+      <{if $xoops_showrblock == 1}>      <{/if}>
+    </tr>
+    <tr>
+      <td class="footer" height="19">
+      <p align="center"><{$xoops_footer}>&nbsp;<span lang="en-us">-</span>&nbsp;<span lang="en-us">Designed 
+      by <a target="_blank" href="http://www.maitsco.com/">Maitsco</a> -</span></td>
+  </tr>
+</table>
+</body>
+</html>
